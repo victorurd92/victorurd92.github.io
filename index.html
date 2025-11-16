@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Naruto Shippuden - Batallas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-overlay"></div>
+
+  <main class="container">
+    <h1 class="title">Naruto Shippuden</h1>
+    <p class="subtitle">
+      Simulador de batallas • Elige tus ninjas y deja que se enfrenten
+    </p>
+
+    <div class="selector-row">
+      <div class="selector">
+        <label for="jugador1">Jugador 1</label>
+        <select id="jugador1"></select>
+      </div>
+      <div class="selector">
+        <label for="jugador2">Jugador 2</label>
+        <select id="jugador2"></select>
+      </div>
+    </div>
+
+    <section class="battle-arena">
+      <article id="card-j1" class="fighter-card"></article>
+      <article id="card-j2" class="fighter-card"></article>
+    </section>
+
+    <button id="btn-batalla" class="btn-battle">Iniciar batalla</button>
+
+    <section class="log-section">
+      <h2>Relato de la batalla</h2>
+      <textarea id="log-batalla" readonly></textarea>
+    </section>
+  </main>
+
+  <script src="js/narutoData.js"></script>
+  <script src="js/batallas.js"></script>
+</body>
+</html>
